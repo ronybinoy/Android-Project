@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="323dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="148dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Email"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="45dp"
+            tools:layout_conversion_absoluteWidth="379dp" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="322dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailEditText"
+            tools:layout_conversion_absoluteHeight="45dp"
+            tools:layout_conversion_absoluteWidth="379dp" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="233dp"
+            android:layout_height="57dp"
+            android:text="Login"
+            app:cornerRadius="?attr/dialogCornerRadius"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+            app:layout_constraintVertical_bias="0.105"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="379dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
